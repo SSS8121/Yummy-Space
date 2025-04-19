@@ -19,6 +19,7 @@ body{
 .left{
     height: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     border: 1px solid white;
@@ -33,6 +34,8 @@ body{
 .header-top{
     border: none;
     background-color: rgb(255, 0, 153);
+    margin-top: 15px;
+    border-radius: 10px;
     
 }
 
@@ -77,6 +80,7 @@ body{
 }
 .menucards img{
     height: 300px;
+    border-radius: 20px;
 }
 .disscount{
     display: flex;
@@ -112,6 +116,7 @@ body{
     display: grid;
     justify-content: center;
 }
+
 .lastimg{
     display: flex;
     justify-content: space-around;
@@ -456,5 +461,5 @@ i{
 .about-discription{
     font-size: 40px;
     background-color: white;
-    height: 630px;
+    height: 400vh;
 }
