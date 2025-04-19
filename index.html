@@ -40,17 +40,17 @@
   
   <script>
     document.querySelector(".login-form").addEventListener("submit", function(event) {
-      event.preventDefault(); // పేజీ reload కాకుండా అడ్డుకుంటుంది
+      event.preventDefault(); 
   
-       // Name ను input నుండి తీసుకోవడం
+       
     const userName = document.getElementById("name").value;
 
-// localStorage లో save చేయడం
+// save in localstorage
 localStorage.setItem("userName", userName);
 
       
-      // login అయ్యాక home pageకి పోవడం
-      window.location.href = "home.html"; // లేదా మీ home page file ఏదైతే అది
+      // after login fo to home page
+      window.location.href = "home.html"; 
     });
   </script>
 </body>

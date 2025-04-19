@@ -446,3 +446,15 @@ i{
     border: 2px solid black;
     border-radius: 7px;
 }
+.about{
+    background-color: white;
+    height: 100px;
+    font-size: 50px;
+    font-family:cursive;
+    text-align: center;
+}
+.about-discription{
+    font-size: 40px;
+    background-color: white;
+    height: 630px;
+}

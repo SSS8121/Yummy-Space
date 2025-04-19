@@ -16,7 +16,7 @@
        
           <a href="https://www.swiggy.com/"><button class="header-top"><h5>Get App</h5></button></a>
            <a href="./addcart.html"><button class="header-top"><h5>Add to cart</h5></button></a>
-           <button class="header-top"> <h5>About</h5></button>
+           <a href="./about.html"><button class="header-top"> <h5>About</h5></button></a>
            <h4 id="welcome-user"></h4>
        </div>  
     </header>
@@ -61,35 +61,35 @@
           <h2 class="heading">Top Restaurents in Hydrabad</h2>
           <div class="menucards">
             <div class="card" style="width: 18rem;">
-                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/gp1ityra6utvzqn6ghnv" class="card-img-top" alt="...">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/2/19308872/cc4d417dc119eeaaac7c1cb773f067cd.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h3 class="card-title">Biryani's</h3>
+                  <h3 class="card-title"> Raju gari Biryani's</h3>
                   <p class="card-text">South Indian Hyderabad Dum Biryani Special</p>
                   <a href="./biriyanis.html"  class="btn btn-danger mt-4">Order now</a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
-                <img src="https://www.onceuponachef.com/images/2021/11/Best-Chocolate-Chip-Cookies-1200x1499.jpg" class="card-img-top" alt="..." height="290px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjWxcNvJVN5gRC7GJkKxvAW4C2IBy1zoWfj0aDk9wrScUtfG8cNTyPvgIxUyjv_NnvNs&usqp=CAU" class="card-img-top" alt="..." height="290px">
                 <div class="card-body">
-                  <h3 class="card-title"> Butter Cookies</h3>
-                  <p class="card-text">It's best Snacks for Relaxing.</p>
-                  <a href="#" class="btn btn-danger mt-5">Order now</a>
+                  <h3 class="card-title"> Mefil Restaurent</h3>
+                  <p class="card-text">South Indian Hyderabad Dum Biryani Special</p>
+                  <a href="./biriyanis.html" class="btn btn-danger mt-5">Order now</a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
-                <img src="https://pinchofyum.com/wp-content/uploads/Pasta-Salad-Serving-Bowl-Square.jpg" class="card-img-top" alt="..." height="300px">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/427473f57e03f1c805581ffbfce5f0fe" class="card-img-top" alt="..." height="300px">
                 <div class="card-body">
-                  <h3 class="card-title">Vegetable Pasta</h3>
-                  <p class="card-text">It's best for Morning Breakfast</p>
-                  <a href="#" class="btn btn-danger mt-5">Order now</a>
+                  <h3 class="card-title">Donne Biriyani </h3>
+                  <p class="card-text">South Indian Hyderabad Dum Biryani Special</p>
+                  <a href="./biriyanis.html" class="btn btn-danger mt-5">Order now</a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
-                <img src="https://www.awesomecuisine.com/wp-content/uploads/2013/07/Mutton-Soup.jpg" class="card-img-top" alt="..." height="300px">
+                <img src="https://content3.jdmagicbox.com/v2/comp/hyderabad/n6/040pxx40.xx40.240516113055.l7n6/catalogue/spicy-spark-sanjeeva-reddy-nagar-hyderabad-home-delivery-restaurants-7zt2etn89p.jpg" class="card-img-top" alt="..." height="300px">
                 <div class="card-body">
-                  <h3 class="card-title">Soups</h3>
-                  <p class="card-text">Delicious and Nutritious  Soup: Enjoy a warm bowl of Soup</p>
-                  <a href="#" class="btn btn-danger mt-4">Order now</a>
+                  <h3 class="card-title">Spicy spark </h3>
+                  <p class="card-text">South Indian Hyderabad Dum Biryani Special</p>
+                  <a href="./addcart.html" class="btn btn-danger mt-4">Order now</a>
                 </div>
               </div>
          </div>
@@ -149,7 +149,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const name = localStorage.getItem("userName"); // localStorage నుండి name తీసుకోవడం
+        const name = localStorage.getItem("userName"); 
     
         if (name) {
           document.getElementById("welcome-user").textContent = `👋 Welcome, ${name}!`;
