@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="card-body">
+    <div class="caart">
+        <a href="./home.html"><button class="last-home">Home</button></a>
+        <h3 class="cart-header"><span><h4 id="cart-user-name" class="text-center mt-3"></h4></span> </h3> 
+        <ul id="cart-items" class="list-group mb-3"></ul>
+       
+        <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p> 
+
+
+
+          
+        <button  id="order-now-btn">Order Now</button>
+      </div>
+      <script src="./index.js"></script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const name = localStorage.getItem("userName");
+      
+          if (name) {
+            const capitalName = name.charAt(0).toUpperCase() + name.slice(1); // Capitalize first letter
+            document.getElementById("cart-user-name").textContent = `Hi👋, ${capitalName}! Welcome to your cart 🛒`;
+          }
+        });
+      </script>
+
+</body>
+</html>

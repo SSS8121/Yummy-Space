@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: backgroundFade 1.5s ease-in-out;
+}
+
+/* Animation for page background */
+@keyframes backgroundFade {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.form-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  animation: slideIn 1s ease-out;
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff6f61;
+  animation: bounce 1.2s ease-in-out;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(0.9); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+  border-color: #ff6f61;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #e55b4f;
+}
